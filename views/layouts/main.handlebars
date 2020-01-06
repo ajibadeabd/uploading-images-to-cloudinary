@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>storybook
+        
+    </title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+<body>
+   <div class="container">
+     <h1>File upload</h1>
+    
+     {{msg}}
+     
+     <form action="/upload-images"  method="post" enctype="multipart/form-data">
+       <div class="file-path input-field">
+         <div class="btn grey">
+           <span>file</span>
+          
+           </div> <input type="file" name="myImage" />  
+           <div class="file-path-wrapper">
+              </div>
+       </div>
+       {{!-- <input type="text" name="itemName"  placeholder="itemName" id="">
+       <input type="number" name="price" id="" placeholder="Price"> --}}
+       <button type="submit" class="btn">submit</button>
+       </form>
+   </div>
+   {{itemName}}
+   <br>
+   {{price}}
+   <img src="{{file}}" alt="" class="responsivme-img">
+  
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+
+    
+</body>
+</html>
